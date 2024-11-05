@@ -10,4 +10,15 @@ public class LucasNum {
         // recurse
         return lucasNum(n - 1) + lucasNum(n - 2);
     }
+
+    public static int aliciaNum(int n){
+        if (n == 0) {
+            return 6;
+        }
+
+        if (n == 1) {
+            return 4;
+        }
+        return aliciaNum(n - 2) - aliciaNum(n - 1);
+    }
 }
